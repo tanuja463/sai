@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        .form-container {
+            max-width: 480px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            background:pink;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .row > div {
+            flex: 1;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .gender-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 8px;
+        }
+
+        button {
+            background-color: skyblue;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Registration Form</h2>
+
+        <form>
+
+            
+            <div class="row">
+                <div>
+                    <label>First Name</label>
+                    <input type="text" placeholder="Your Name">
+                </div>
+
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" placeholder="reguired">
+                </div>
+            </div>
+
+            
+            <div class="row">
+                <div>
+                    <label>Date of Birth</label>
+                    <input type="date">
+                </div>
+
+                <div>
+                    <label>Gender</label>
+                    <div class="gender-group">
+                        <label><input type="radio" name="gender" value="Male"> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                        <label><input type="radio" name="gender" value="Other"> Other</label>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="row">
+                <div>
+                    <label>E-mail</label>
+                    <input type="email" placeholder="abc@gmail.com">
+                </div>
+
+                <div>
+                    <label>Phone</label>
+                    <input type="text" placeholder="Mobile number">
+                </div>
+            </div>
+
+            
+            <div class="form-group">
+                <label>Subject</label>
+                <select>
+                    <option value="">Choose</option>
+                    <option>UI/UX</option>
+                    <option>Java</option>
+                    <option>cyber security</option>
+                    <option>Graphic Design</option>
+                    <option>AI Data Analyst</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
